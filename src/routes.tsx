@@ -1,4 +1,5 @@
-import { HashRouter, Route, Switch, Redirect } from 'react-router-dom';
+import { Route, Switch, Redirect, BrowserRouter } from 'react-router-dom';
+import { createBrowserHistory } from "history";
 import TradePage from './pages/TradePage';
 import OpenOrdersPage from './pages/OpenOrdersPage';
 import React from 'react';
@@ -12,9 +13,10 @@ import PoolListPage from './pages/pools/PoolListPage';
 import { getTradePageUrl } from './utils/markets';
 
 export function Routes() {
+  const hist = createBrowserHistory();
   return (
     <>
-      <HashRouter basename={'/'}>
+      <BrowserRouter basename={'/'} history={hist}>
         <BasicLayout>
           <Switch>
             <Route exact path="/">
@@ -42,7 +44,7 @@ export function Routes() {
             </Route>
           </Switch>
         </BasicLayout>
-      </HashRouter>
+      </BrowserRouter>
     </>
   );
 }
