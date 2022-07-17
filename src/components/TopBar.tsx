@@ -181,10 +181,10 @@ export default function TopBar() {
               <img src={logo} alt="" style={{ width: 145, height: 40 }} />
             </LogoWrapper>
           </Col>
-          <Col flex="auto" style={{ textAlign: 'center'}}>
+          {/* <Col flex="auto" style={{ textAlign: 'center'}}>
             {menuDiv}
-          </Col>
-          <Col flex="none" style={{ paddingRight: 20}}>
+          </Col> */}
+          <Col flex="none" style={{ paddingRight: 20, marginLeft: 'auto'}}>
             <WalletConnect />
           </Col>
         </Row>
