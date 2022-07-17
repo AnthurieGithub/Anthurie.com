@@ -460,7 +460,7 @@ export default function TradeForm({
               borderRadius: 4,
             }}
           >
-            LIMIT {side.toUpperCase()} {baseCurrency}
+            {side.toUpperCase()} {baseCurrency}
           </BuyButton>
         </div>
       </div>
