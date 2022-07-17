@@ -1,7 +1,7 @@
 import { Col, Row, Menu } from 'antd';
 import React, { useEffect, useState } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
-import logo from '../assets/logo.svg';
+import logo from '../assets/logo.png';
 import styled from 'styled-components';
 import { ENDPOINTS, useConnectionConfig } from '../utils/connection';
 import CustomClusterEndpointDialog from './CustomClusterEndpointDialog';
@@ -9,7 +9,7 @@ import { EndpointInfo } from '../utils/types';
 import { notify } from '../utils/notifications';
 import { Connection } from '@solana/web3.js';
 import WalletConnect from './WalletConnect';
-import { getTradePageUrl } from '../utils/markets';
+import { getTradePageUrl } from '../utils/markets'; 
 
 const Wrapper = styled.div`
   // flex-direction: row;
