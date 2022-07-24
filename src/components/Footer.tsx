@@ -9,6 +9,7 @@ const footerElements = [
   { description: 'Discord', link: helpUrls.discord },
   { description: 'Twitter', link: helpUrls.twitter },
   { description: 'Solana Network', link: helpUrls.solanaBeach },
+  { description: 'Add Token/Feedback', link: helpUrls.feedback },
 ];
 
 export const CustomFooter = () => {
